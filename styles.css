@@ -49,9 +49,13 @@ body {
   padding: 15px;
 }
 
-.description h2,
+.description h1,
 .description p {
   text-align: center;
+}
+
+.description h1 {
+  font-size: 22px;
 }
 
 .description p {
