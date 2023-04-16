@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(212, 45%, 89%);
+  --grayishBlue: hsl(220, 15%, 55%);
+  --darkBlue: hsl(218, 44%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightGray);
+}
+
+.card {
+  width: 340px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.card .QR-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.QR-img .img {
+  height: 100%;
+  width: 100%;
+}
+
+.description {
+  padding: 15px;
+}
+
+.description h2,
+.description p {
+  text-align: center;
+}
+
+.description p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: var(--grayishBlue);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .card .QR-img {
+    height: 335px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
